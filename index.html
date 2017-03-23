@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue JS</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue"></script>
+    <div id="vueApp">
+        <component-1></component-1>
+        <script type="text/x-template" id="component-1" data-type="vue-template">
+          <div>
+            <h1>Component 1</h1>
+            <component-2></component-2>
+            <button v-on:click="globalCounter.counter += 1">globalCounter: {{ globalCounter.counter }}</button>
+            <button v-on:click="scopedCounter += 1">scopedCounter: {{ scopedCounter }}</button>
+          </div>
+        </script>
+    </div>
+    <script src="js/component-2.js" charset="utf-8"></script>
+    <script src="js/vueApp.js" charset="utf-8"></script>
+  </body>
+</html>
