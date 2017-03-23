@@ -11,12 +11,13 @@
         <script type="text/x-template" id="component-1" data-type="vue-template">
           <div>
             <h1>Component 1</h1>
-            <component-2></component-2>
             <button v-on:click="globalCounter.counter += 1">globalCounter: {{ globalCounter.counter }}</button>
             <button v-on:click="scopedCounter += 1">scopedCounter: {{ scopedCounter }}</button>
           </div>
         </script>
+        <component-2></component-2>
     </div>
+    <script src="js/component-1.js" charset="utf-8"></script>
     <script src="js/component-2.js" charset="utf-8"></script>
     <script src="js/vueApp.js" charset="utf-8"></script>
   </body>
